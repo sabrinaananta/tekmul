@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIMITLESS PERFORMANCE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-e0JMYsd53ii+sc0/bJGFsiCZc+5NDVN2yr8+0RDqr0Q10h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigasi -->
+ <nav class="navbar navbar-expand-lg shadow-lg fixed-top" style="background-color: grey;">
+
+    <div class="container">
+      <a class="navbar-brand" href="#">LIMITLESS PERFORMANCE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarText">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#tentang">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Produk">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Kategori">Kategori</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Fitur">Fitur</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#staff">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Kontak kami">Kontak Kami</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+ <!-- Banner -->
+<div class="container-fluid banner">
+  <div class="container text-center">
+      <h4 class="display-6">SELAMAT DATANG</h4>
+      <h3 class="display-1">LIMITLESS PERFORMANCE</h3>
+      <a href="#tentang">
+          <button type="button" class="btn btn-danger btn-lg">Cek Tentang</button>
+      </a>
+  </div>
+</div>
+
+
+  <!-- Tentang -->
+  <div class="container-fuild tentang pt-5 pb-5">
+    <div class="container text-center">
+      <h2 class="display-3" id="tentang">ASUS VivoBook X415JA</h2>
+      <p>ASUS VivoBook X415JA/A416JA adalah laptop yang dirancang dengan desain modern dan ringan, cocok untuk pengguna yang membutuhkan perangkat portabel untuk aktivitas sehari-hari. 
+        Dengan sentuhan estetika yang minimalis, laptop ini memberikan kesan profesional sekaligus stylish. Material dan konstruksinya menunjukkan perhatian terhadap detail, menciptakan perangkat yang tidak hanya menarik secara visual tetapi juga nyaman digunakan. 
+        Laptop ini dirancang untuk memenuhi kebutuhan produktivitas dengan daya tahan yang andal, menjadikannya pilihan yang tepat bagi pelajar, pekerja profesional, maupun pengguna kasual yang mencari keseimbangan antara fungsi dan mobilitas.
+      </p>
+      <div class="row pt-4">
+        <div class="col-md-4">
+          <img src="assets/pemrograman.png" alt="Pemrograman" class="img-fluid mb-3 small-image">
+          <h3 class="mt-3">Pemrograman</h3>
+          <p>
+            Laptop ini mendukung berbagai bahasa pemrograman seperti Python, Java, PHP, atau HTML untuk pengembangan aplikasi, web, maupun software. Dengan 
+            performa yang cukup stabil, pengguna dapat menjalankan tools seperti Visual Studio Code, PyCharm, atau Android Studio tanpa kendala berarti, menjadikannya cocok untuk pelajar atau profesional yang ingin fokus pada coding.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/desain.png" alt="Desain" class="img-fluid mb-3 small-image2">
+          <h3 class="mt-3">Desain Kreatif</h3>
+          <p>
+            Laptop ini dapat digunakan untuk desain grafis, ilustrasi, atau pembuatan konten kreatif menggunakan software seperti Adobe Photoshop, Illustrator, atau Canva. 
+            Layarnya yang cukup luas memudahkan proses pengeditan dan memberikan pengalaman visual yang nyaman untuk proyek-proyek desain ringan hingga sedang.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/Kuliah.png" alt="Kuliah" class="img-fluid mb-3 small-image">
+          <h3 class="mt-3">Mengerjakan Tugas Kuliah</h3>
+          <p>
+            Untuk mahasiswa, laptop ini sangat membantu dalam menyelesaikan tugas seperti menulis makalah, membuat presentasi, atau melakukan riset online. 
+            Aplikasi seperti Microsoft Office (Word, Excel, PowerPoint) dan Google Workspace (Docs, Sheets, Slides) dapat berjalan dengan lancar, sehingga mendukung produktivitas selama proses belajar.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<!-- Produk -->
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script>
+  var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+
+  function init() {
+      canvas = document.getElementById("canvas");
+      anim_container = document.getElementById("animation_container");
+      dom_overlay_container = document.getElementById("dom_overlay_container");
+
+      var comp = AdobeAn.getComposition("5525CD011037E94C8E98075BA80F29F7");
+      var lib = comp.getLibrary();
+      var loader = new createjs.LoadQueue(false);
+      loader.installPlugin(createjs.Sound);
+      loader.addEventListener("complete", function(evt) { handleComplete(evt, comp); });
+      loader.loadManifest(lib.properties.manifest);
+  }
+
+  function handleComplete(evt, comp) {
+      var lib = comp.getLibrary();
+      var ss = comp.getSpriteSheet();
+      var queue = evt.target;
+      var ssMetadata = lib.ssMetadata;
+      for (var i = 0; i < ssMetadata.length; i++) {
+          ss[ssMetadata[i].name] = new createjs.SpriteSheet({
+              "images": [queue.getResult(ssMetadata[i].name)],
+              "frames": ssMetadata[i].frames
+          });
+      }
+      exportRoot = new lib.tekmul_HTML5Canvas();
+      stage = new lib.Stage(canvas);
+      stage.enableMouseOver();
+      fnStartAnimation = function () {
+          stage.addChild(exportRoot);
+          createjs.Ticker.framerate = lib.properties.fps;
+          createjs.Ticker.addEventListener("tick", stage);
+      }
+
+      AdobeAn.makeResponsive(false, 'both', false, 1, [canvas, anim_container, dom_overlay_container]);
+      AdobeAn.compositionLoaded(lib.properties.id);
+      fnStartAnimation();
+  }
+
+  function playSound(id, loop, offset) {
+      return createjs.Sound.play(id, { 'interrupt': createjs.Sound.INTERRUPT_EARLY, 'loop': loop, 'offset': offset });
+  }
+
+  // Fungsi untuk tombol Fitur
+  function openFitur() {
+      window.open("http://127.0.0.1:5500/index.html#Fitur", "_blank");
+  }
+
+  // Fungsi untuk tombol Produk
+  function openProduk() {
+      window.open("http://127.0.0.1:5500/index.html#Produk", "_blank");
+  }
+
+  // Fungsi untuk memulai video saat navbar Produk diklik
+  function playVideo() {
+      var video = document.getElementById("backgroundVideo");
+      video.play();
+  }
+
+  // Event listener untuk navbar Produk
+  document.querySelector('.nav-link[href="#Produk"]').addEventListener('click', function(e) {
+      e.preventDefault(); // Mencegah link untuk melompat ke #Produk
+      playVideo(); // Memulai video
+      window.location.hash = "#Produk"; // Mengarahkan ke bagian Produk
+  });
+</script>
+
+<style>
+  /* Video background styling */
+  #backgroundVideo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+  }
+
+  /* Animation container styling */
+  #animation_container {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      margin: 0 auto;
+      z-index: 0;
+  }
+
+  /* Canvas styling */
+  canvas {
+      position: absolute;
+      z-index: 1;
+      pointer-events: none;
+  }
+
+  /* DOM overlay container styling */
+  #dom_overlay_container {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Styling for your clickable elements inside the overlay container */
+  .clickable-btn {
+      position: absolute;
+      padding: 20px 40px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 8px;
+      color: black;
+      cursor: pointer;
+  }
+
+  /* Styling for Produk button (Kiri Bawah) */
+  .produk-btn {
+      left: 0;
+      bottom: 10%;
+      transform: translateX(0%);
+  }
+
+  /* Styling for Fitur button (Kanan Atas) */
+  .fitur-btn {
+      right: 0;
+      top: 10%;
+      transform: translateX(0%);
+  }
+</style>
+
+<body onload="init();" style="margin:0px;">
+  <div id="animation_container">
+    
+    <!-- Video Background without autoplay -->
+    <video id="backgroundVideo" loop>
+        <source src="assets/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Canvas -->
+    <canvas id="canvas" width="1280" height="720"></canvas>
+
+    <!-- DOM Overlay Container -->
+    <div id="dom_overlay_container">
+        <!-- Button Produk di kiri bawah -->
+        <div class="clickable-btn produk-btn" onclick="openProduk()">
+            Produk
+        </div>
+
+        <!-- Button Fitur di kanan atas -->
+        <div class="clickable-btn fitur-btn" onclick="openFitur()">
+            Fitur
+        </div>
+    </div>
+
+  
+<!-- Bagian Produk -->
+<div id="produk-section" style="position: absolute; top: 0%; left: 50%; transform: translateX(-50%); text-align: center; z-index: 10; color: white;">
+  <h2 class="display-3" id="Produk">Produk</h2>
+</div>
+
+
+</div>
+
+
+  
+</body>
+
+
+
+ <!-- Kategori -->
+<div class="container-fuild pt-5 pb-5">
+  <div class="container">
+    <h2 class="display-3 text-center" id="Kategori">Kategori</h2>
+    <div class="clearfix pt-5">
+      <video class="col-md-6 float-md-end mb-3 crop-img" width="300" height="300" controls>
+        <source src="assets/laptop.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        Sebagai laptop entry-level, VivoBook X415JA/A416JA menawarkan nilai lebih dengan desain yang modern dan portabilitas yang baik, sehingga cocok digunakan oleh pelajar, mahasiswa, serta pekerja kantoran yang tidak memerlukan spesifikasi tinggi.
+        Laptop ini ideal bagi mereka yang mencari perangkat dengan performa dasar untuk kegiatan sehari-hari tanpa harus mengeluarkan biaya tinggi, tetapi tetap ingin mendapatkan pengalaman pengguna yang memadai.
+      </p>
+      <p>
+        Laptop ASUS VivoBook X415JA/A416JA termasuk dalam kategori laptop entry-level dan laptop untuk produktivitas sehari-hari. 
+        Laptop ini dirancang untuk memenuhi kebutuhan pengguna yang membutuhkan perangkat dengan harga yang terjangkau namun 
+        tetap menawarkan performa yang cukup baik untuk menangani tugas-tugas dasar seperti browsing internet, mengolah dokumen, presentasi, hingga hiburan ringan seperti menonton video atau mendengarkan musik.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Fitur Section -->
+<div class="container-fluid pt-5 pb-5 bg-light">
+  <div class="container text-center">
+    <h2 class="display-3" id="Fitur">Fitur</h2>
+    <p>Layar: 14 inci Full HD (1920 x 1080), panel NanoEdge dengan bezel tipis, memberikan pengalaman visual yang lebih luas.</p>
+    <div class="row pt-4 gx-4 gy-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <a href="fitur1.html">
+          <div class="card crop-img">
+            <img src="assets/intel.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Intel Core i5</h5>
+            
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <a href="fitur2.html">
+          <div class="card crop-img">
+            <img src="assets/grafis.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Intel UHD Graphics</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <a href="fitur3.html">
+          <div class="card crop-img">
+            <img src="assets/ram.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">RAM</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <a href="fitur4.html">
+          <div class="card crop-img">
+            <img src="assets/ssd.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">SSD dan HDD</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-md-4">
+        <a href="fitur5.html">
+          <div class="card crop-img">
+            <img src="assets/asus.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Desain dan Layar</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-md-4">
+        <a href="fitur6.html">
+          <div class="card crop-img">
+            <img src="assets/port.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title"> Port dan Konektivitas</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- tim -->
+<div class="container-fluid pt-5 pb-5 bg-light">
+  <div class="container text-center">
+    <h2 class="display-3" id="staff">Tim Kami</h2>
+    <p>Berikut adalah anggota dari Tim Kami
+    </p>
+    <div class="row pt-3 gx-3 gy-3">
+      <div class="col-md-4 text-center tim">
+        <img src="assets/bubun.jpg"
+        class="rounded-circle mb-3"
+        />
+        <h4>Sabrina Ananta</h4>
+        <p>Web Designer</p>
+      </div>
+
+      <div class="col-md-4 text-center tim">
+        <img src="assets/sasa.jpg"
+        class="rounded-circle mb-3"
+        />
+        <h4>Pasha Nur Aprilia</h4>
+        <p>Web Designer</p>
+      </div>
+
+      <div class="col-md-4 text-center tim">
+        <img src="assets/putri.jpg"
+        class="rounded-circle mb-3"
+        />
+        <h4>Rachmalia Putri</h4>
+        <p>Web Designer</p>
+      </div>
+
+      <div class="col-md-4 text-center tim">
+        <img src="assets/dayen.jpg"
+        class="rounded-circle mb-3"
+        />
+        <h4>Dian Raisa</h4>
+        <p>Web Designer</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- kontak -->
+<div class="container-fluid pt-5 pb-5 kontak">
+  <div class="container">
+    <h2 class="display-3 text-center" id="Kontak kami">Kontak Kami</h2>
+    <p class="text-center">Hubungi Kami
+    </p>
+    <div class="row pb-2">
+      <div class="col-md-5">
+        <input 
+        class="form-control-lg md-3" 
+        type="text" 
+        placeholder="Nama"
+        />
+        <input 
+        class="form-control-lg md-3" 
+        type="text" 
+        placeholder="Email"
+        />
+        <input 
+        class="form-control-lg md-3" 
+        type="text" 
+        placeholder="No Phone"
+        />
+      </div>
+      <div class="col-md-5">
+        <textarea class="form-control form-control-lg" rows="7"></textarea>
+      </div>
+    </div>
+    <div class="col-md-3 mx-auto text-center">
+      <button type="button" class="btn btn-danger btn-lg">
+        Kirim Pesan
+      </button>
+    </div>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

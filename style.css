@@ -1,0 +1,86 @@
+.banner {
+  background: url(https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2018/11/dark-wallpapers.jpg)
+    no-repeat center;
+  background-size: cover;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  color: #fff;
+}
+
+.small-image {
+  width: 150px;
+  height: auto;
+}
+
+.small-image2 {
+  width: 115px;
+  height: auto;
+}
+
+.video-container {
+  background-color: #3588db; /* Warna latar belakang */
+  padding: 20px; /* Menambahkan padding untuk memberi jarak antara video dan latar belakang */
+  border-radius: 10px; /* Membuat sudut melengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Memberikan bayangan untuk efek lebih menarik */
+}
+
+.video-responsive {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.crop-img {
+  object-fit: cover;
+}
+
+.tim img {
+  width: 200px;
+  border: 10px solid #cccccc;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#backgroundVideo {
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#animation_container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#dom_overlay_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clickable-btn {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clickable-btn:hover {
+  background-color: rgba(200, 200, 200, 0.8);
+}
